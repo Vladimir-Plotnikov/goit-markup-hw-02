@@ -3,69 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MainPage</title>
+    <link
+      rel="stylesheet"
+      href="https://github.com/sindresorhus/modern-normalize/blob/master/modern-normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <!--logo container-->
       <div>
-        <a href="./index.html" aria-label="логотип webstudio">WebStudio</a>
+        <a
+          class="logo-style link"
+          href="./index.html"
+          aria-label="логотип webstudio"
+          >Web<span class="logo-darkside">Studio</span></a
+        >
       </div>
 
       <!--navigation container-->
-      <div>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+      <nav>
+        <ul class="list">
+          <li><a class="navigation-list link" href="">Студия</a></li>
+          <li>
+            <a class="navigation-list link" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li><a class="navigation-list link" href="">Контакты</a></li>
         </ul>
-      </div>
+      </nav>
       <!--contacts container-->
-      <div>
-        <ul>
+      <nav>
+        <ul class="list">
           <li>
             <address>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="header-tel-mail link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
             </address>
           </li>
           <li>
             <address>
-              <a href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="header-tel-mail link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
             </address>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
     <main>
       <!--order servies container-->
-      <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button>Заказать услугу</button>
+      <section class="order-sevies-container">
+        <h1 class="order-servies-heading">
+          Эффективные решения для вашего бизнеса
+        </h1>
+        <button class="order-servies-button" type="button">
+          Заказать услугу
+        </button>
       </section>
 
       <!--what do we do container-->
-      <section>
+      <section class="dowedo-container">
         <!--what do we do LIST-->
 
         <div>
           <dl>
-            <dt>Внимание к деталям</dt>
-            <dd>
+            <dt class="dowedo-list">Внимание к деталям</dt>
+            <dd class="dowedo-description">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции
             </dd>
-            <dt>Пунктуальность</dt>
-            <dd>
+            <dt class="dowedo-list">Пунктуальность</dt>
+            <dd class="dowedo-description">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </dd>
-            <dt>Планирование</dt>
-            <dd>
+            <dt class="dowedo-list">Планирование</dt>
+            <dd class="dowedo-description">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </dd>
-            <dt>Современные технологии</dt>
-            <dd>
+            <dt class="dowedo-list">Современные технологии</dt>
+            <dd class="dowedo-description">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </dd>
@@ -74,7 +100,7 @@
         <!--what do we do PICS-->
         <div>
           <dl>
-            <dt>Чем мы занимаемся</dt>
+            <dt class="dowedo-pics-heading">Чем мы занимаемся</dt>
             <dd>
               <img
                 src="./pics/WebStudioimg1.jpg"
@@ -104,8 +130,8 @@
       </section>
 
       <!--our team container-->
-      <section>
-        <h2>Наша команда</h2>
+      <section class="ourteam-container">
+        <h2 class="ourteam-heading">Наша команда</h2>
         <dl>
           <dt>
             <img
@@ -115,8 +141,8 @@
               height="260"
             />
           </dt>
-          <dd>Игорь Демьяненко</dd>
-          <dd>Product Designer</dd>
+          <dd class="ourteam-list-names">Игорь Демьяненко</dd>
+          <dd class="ourteam-list-description">Product Designer</dd>
           <dt>
             <img
               src="./pics/olga.jpg"
@@ -125,8 +151,8 @@
               height="260"
             />
           </dt>
-          <dd>Ольга Репина</dd>
-          <dd>Frontend Developer</dd>
+          <dd class="ourteam-list-names">Ольга Репина</dd>
+          <dd class="ourteam-list-description">Frontend Developer</dd>
           <dt>
             <img
               src="./pics/nikolai.jpg"
@@ -135,8 +161,8 @@
               height="260"
             />
           </dt>
-          <dd>Николай Тарасов</dd>
-          <dd>Marketing</dd>
+          <dd class="ourteam-list-names">Николай Тарасов</dd>
+          <dd class="ourteam-list-description">Marketing</dd>
           <dt>
             <img
               src="./pics/michael.jpg"
@@ -145,38 +171,49 @@
               height="260"
             />
           </dt>
-          <dd>Михаил Ермаков</dd>
-          <dd>UI Designer</dd>
+          <dd class="ourteam-list-names">Михаил Ермаков</dd>
+          <dd class="ourteam-list-description">UI Designer</dd>
         </dl>
       </section>
     </main>
-    <footer>
+    <footer class="footer-container">
       <!--logo container-->
       <div>
-        <a href="./index.html" aria-label="логотип webstudio">WebStudio</a>
+        <a
+          class="logo-style link"
+          href="./index.html"
+          aria-label="логотип webstudio"
+          >Web<span class="logo-whiteside">Studio</span></a
+        >
       </div>
       <!--contacts container-->
-      <div>
-        <ul>
+      <nav>
+        <ul class="list">
           <li>
             <address>
-              <a href="https://goo.gl/maps/L8HJAxBPECRe6HpdA"
+              <a
+                class="footer-adress link"
+                href="https://goo.gl/maps/L8HJAxBPECRe6HpdA"
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </address>
           </li>
           <li>
             <address>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="footer-tel-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </address>
           </li>
           <li>
             <address>
-              <a href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="footer-tel-mail link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
             </address>
           </li>
         </ul>
-      </div>
+      </nav>
     </footer>
   </body>
 </html>
